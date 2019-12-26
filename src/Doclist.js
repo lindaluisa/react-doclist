@@ -1,7 +1,15 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './Doclist.css';
 
 class Doclist extends Component {
+  static PropTypes = {
+    name: PropTypes.string.isRequired,
+    specialities: PropTypes.arrayOf(PropTypes.string).isRequired,
+    contact: PropTypes.string.isRequired,
+    img: PropTypes.string.isRequired
+  }
+
   render() {
     /* short form for const title = this.props.title*/
     const {name, img, contact} = this.props; 

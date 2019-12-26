@@ -1,0 +1,11 @@
+.doclist__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+@media (max-width: 580px) {
+  .doclist__list {
+    display: block;
+  }
+}

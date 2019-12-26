@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import Doclist from './Doclist';
 import Navbar from './Navbar';
+import DoclistApi from './DoclistApi'; 
 import './DoclistApp.css';
 
 class DoclistApp extends Component {
@@ -9,12 +9,7 @@ class DoclistApp extends Component {
     return (
       <div className="App">
         <Navbar />
-        <Doclist 
-          name="Linda Nhu" 
-          specialities={['Orthopaedic surgeons','Sports medicine']}
-          contact="Mustermann Street"
-          img="random-user.jpg"
-          />
+        <DoclistApi />
       </div>
     )
   }
